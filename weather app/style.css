@@ -1,0 +1,96 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #6A5495;
+}
+
+.header h1 {
+    text-align: center;
+    color: #E7ED9B;
+    margin-top: 40px;
+}
+
+.header form{
+    margin: 40px auto;
+    text-align: center;
+    display: flex;
+    justify-content:center ;
+    position: relative;
+}
+
+form button{
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+    /* font-weight: bold; */
+    color: #6A5495;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+form label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 8px;
+    color: #6A5495;
+    transition: all 0.5s ease-in;
+} 
+
+form input{
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+form:focus-within label{
+    top: -15px;
+    color:#E7ED9B ;
+}
+
+.active label{
+    top: -15px;
+    color:#E7ED9B ;
+}
+
+.container {
+    width: 70%;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.list-poke li {
+    width: 250px;
+    height: auto;
+    padding: 15px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.list-poke h5 {
+    font-size: 19px;
+}
+.list-poke p {
+    font-size: 18px;
+}
