@@ -1,0 +1,88 @@
+/* projet n:1 */
+.show-hide{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+}
+.showHideDiv{
+    margin-top: 20px;
+    width: 70%;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* projet n:2 */
+.generateurDeCitations h2{
+    text-align: center;
+}
+.container {
+    margin-top: 40px;
+    background: #5C258D;
+    background: -webkit-linear-gradient(to right, #4389A2, #5C258D);
+    background: linear-gradient(to right, #4389A2, #5C258D);
+    height: 100%;
+    min-width: 500px;
+  }
+  
+  #citation {
+    font-size: 2em;
+    font-family: 'Satisfy', curve;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+  }
+  
+  #citation:before {
+      content: open-quote;
+  }
+  
+  #citation:after {
+      content: close-quote;
+  }
+  
+  #auteur {
+    font-size: 1.5em;
+    font-style: italic;
+  }
+  
+  #nouveau {
+    background: #ff9966;
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
+    background: linear-gradient(to right, #f7383b, #ff9966);
+    cursor: pointer;
+  }
+
+  /* -------------------------------- */
+  /*           projet 4              */
+
+  .form {
+    background-color: #232020;
+    min-width: 500px;
+  }
+  
+  header {
+    color: #ff7315;
+    text-align: center;
+    font-size: 3em;
+  }
+  
+  #instructions {
+    color: white;
+  }
+  
+  .instruction {
+    padding: 15px;
+    margin: 10px 0;
+  }
+  
+  .plus {
+    background-color: #f3374a;
+  }
+  
+  .moins {
+    background-color: #ffa372;
+  }
+  
+  .fini {
+    background-color : #0c9463;
+  }
