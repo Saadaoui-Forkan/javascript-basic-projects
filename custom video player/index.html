@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/range.css">
+    <title>Custom Video Player</title>
+</head>
+<body>
+    <h1>Custom Video Player</h1>
+    <div class="video-wrapper">
+        <video src="video/video.mp4" poster="img/poster.jpg" ></video>
+        <div class="video-controls">
+            <!-- top side -->
+            <div class="progress-video">
+                <input type="range" min="0" max="100" value="0" step="0.01"
+                class="input-progress-video" title="progress">
+                <div class="time-hover">
+                    <span>00:01</span>
+                </div>
+            </div>
+            <!-- bottom side -->
+            <div class="btn-player">
+                <!-- left side -->
+                <div class="side-left">
+                    <div class="play-pause">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="volume-voice">
+                        <div class="volume-icon" data-mute="false">
+                            <i class="fa-solid fa-volume-high"></i>
+                        </div>
+                        <input type="range" min="0" max="1" step="0.1" value="0.3" 
+                        class="volume-progress" title="volume-progress">
+                    </div>
+                    <div class="time-count">
+                        <span class="current">00:00</span>
+                        <span class="separation">/</span>
+                        <span class="duration">00:00</span>
+                    </div>
+                </div>
+                <!-- right side -->
+                <div class="side-right">
+                    <div class="settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div class="fullscreen" data-zoom="false">
+                        <!-- <i class="fa-solid fa-compress"></i> -->
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

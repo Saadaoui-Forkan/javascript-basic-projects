@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #2C3333;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+h1{
+    color:#F5F2E7 ;
+    text-align: center;
+    margin: 20px auto;
+}
+video{
+    max-width: 500px;
+    height: auto;
+    margin-left: 50%;
+    margin-top: 100px;
+    transform: translateX(-50%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.video-controls{
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -4px;
+    padding-bottom: 5px;
+    background: #395B64;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.btn-player{
+    display: flex;
+    justify-content: space-between;
+    color: #F5F2E7;
+    margin-top: 10px;
+}
+.side-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    margin-left: 5px;
+}
+.side-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 20%;
+} 
+.volume-voice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.volume-icon{
+    cursor: pointer;
+}
+.volume-icon:hover + .volume-progress{
+    transform: scale(1);
+}
+/* .volume-voice:hover .volume-progress{
+    transform: scale(1);
+}   */
+.time-count{
+    font-size: 13px;
+    font-weight: bold;
+}
+.time-hover{
+    position: absolute;
+    left: 0;
+    top: -40%;
+    color: #bd2222;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+    transform: translateX(-100%);
+}
+.progress-video{
+    position: relative;
+}
